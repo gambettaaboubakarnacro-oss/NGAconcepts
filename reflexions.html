@@ -99,12 +99,52 @@
       <span class="newsletter-label">Ne rien manquer</span>
       <p>Recevoir les nouvelles reflexions par courriel, au rythme des publications.</p>
     </div>
-    <form class="newsletter-form" onsubmit="return false;">
-      <input type="email" placeholder="Votre adresse courriel" class="newsletter-input">
-      <button type="submit" class="btn-primary-dark">Recevoir les reflexions</button>
+    <form class="newsletter-form" id="newsletterForm">
+      <input type="email" placeholder="Votre adresse courriel" class="newsletter-input" id="newsletterEmail" required>
+      <button type="submit" class="btn-primary-dark" id="newsletterBtn">Recevoir les reflexions</button>
     </form>
   </div>
+  <p class="newsletter-msg" id="newsletterMsg"></p>
 </div>
+
+<script>
+  document.getElementById('newsletterForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var emailInput = document.getElementById('newsletterEmail');
+    var btn = document.getElementById('newsletterBtn');
+    var msg = document.getElementById('newsletterMsg');
+    var email = emailInput.value.trim();
+    if(!email) return;
+    btn.disabled = true;
+    btn.textContent = 'Envoi...';
+    msg.textContent = '';
+    msg.className = 'newsletter-msg';
+    fetch('/subscribe', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email })
+    })
+    .then(function(r){ return r.json(); })
+    .then(function(data){
+      if(data.ok){
+        msg.textContent = 'Merci, vous recevrez les prochaines reflexions.';
+        msg.className = 'newsletter-msg success';
+        emailInput.value = '';
+      } else {
+        msg.textContent = 'Une erreur est survenue. Reessayez plus tard.';
+        msg.className = 'newsletter-msg error';
+      }
+    })
+    .catch(function(){
+      msg.textContent = 'Une erreur est survenue. Reessayez plus tard.';
+      msg.className = 'newsletter-msg error';
+    })
+    .finally(function(){
+      btn.disabled = false;
+      btn.textContent = 'Recevoir les reflexions';
+    });
+  });
+</script>
 
 <section class="block reflexions" style="padding-top:20px">
   <div class="reflex-feed">

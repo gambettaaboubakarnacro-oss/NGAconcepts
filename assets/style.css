@@ -799,6 +799,9 @@ section.block{ max-width:1280px; margin:0 auto; padding:60px 20px; }
   background:var(--paper);
   color:var(--ink);
 }
+.newsletter-msg{ font-size:13px; margin-top:12px; min-height:16px; }
+.newsletter-msg.success{ color:#3F6B4A; }
+.newsletter-msg.error{ color:var(--wine); }
 
 .pillars{
   max-width:1280px; margin:0 auto; padding:52px 20px 80px;
