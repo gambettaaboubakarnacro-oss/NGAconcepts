@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>QDE+, NGAconcept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="" id="top">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="NGAconcept">
+      <span class="brand-word">NGA<span>concept</span></span>
+    </a>
+    <button class="hub-btn" id="hubBtn">
+      Menu
+      <span class="dots"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+    </button>
+  </div>
+</header>
+
+<div class="hub-overlay" id="hubOverlay"></div>
+<nav class="hub-panel" id="hubPanel">
+  <div class="hub-top">
+    <span class="hub-label">Navigation</span>
+    <button class="hub-close" id="hubClose" aria-label="Fermer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <div class="hub-title">Le <b>hub</b> des intelligences NGAconcept</div>
+  <div class="hub-grid">
+      <a href="concepts.html" class="hub-module current">
+        <span class="hm-num">01</span>
+        <span class="hm-body">
+          <span class="hm-name">Concepts</span>
+          <span class="hm-desc">Des cadres de pensée et plus, du réflexe d urgence a la vision de long terme.</span>
+        </span>
+        <span class="hm-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a href="reflexions.html" class="hub-module">
+        <span class="hm-num">02</span>
+        <span class="hm-body">
+          <span class="hm-name">Réflexions</span>
+          <span class="hm-desc">Essais, citations et notes publiés régulièrement.</span>
+        </span>
+        <span class="hm-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a href="formations.html" class="hub-module">
+        <span class="hm-num">03</span>
+        <span class="hm-body">
+          <span class="hm-name">Formations</span>
+          <span class="hm-desc">Sessions et programmes construits autour des concepts.</span>
+        </span>
+        <span class="hm-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a href="conferences.html" class="hub-module">
+        <span class="hm-num">04</span>
+        <span class="hm-body">
+          <span class="hm-name">Conférences</span>
+          <span class="hm-desc">Interventions publiques et invitations.</span>
+        </span>
+        <span class="hm-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a href="livres.html" class="hub-module">
+        <span class="hm-num">05</span>
+        <span class="hm-body">
+          <span class="hm-name">Livres</span>
+          <span class="hm-desc">Ouvrages publiés et à paraître.</span>
+        </span>
+        <span class="hm-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a href="about.html" class="hub-module">
+        <span class="hm-num">06</span>
+        <span class="hm-body">
+          <span class="hm-name">À propos</span>
+          <span class="hm-desc">Parcours et vision du Dr Gambetta A. Nacro.</span>
+        </span>
+        <span class="hm-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+  </div>
+  <div class="hub-foot">
+    <a href="index.html">Accueil</a>
+    <a href="https://www.linkedin.com/in/dr-gambetta-a-nacro-ba7b3470" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</nav>
+
+
+<div class="concept-detail-hero" style="--accent:#8A6D9C">
+  <div class="inner cd-hero-flex">
+    <div class="cd-hero-text">
+      <a href="concepts.html" class="cd-back">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+        Tous les concepts
+      </a>
+      <div class="cd-acronym" style="color:#8A6D9C">QDE+</div>
+      <p class="cd-tagline"><b>Une discipline de la lucidite</b><br>Penser juste, decider avec lucidite, agir avec impact. Le rythme ralentit a chaque etape, jusqu au filtre final.</p>
+    </div>
+  </div>
+</div>
+
+<div class="qde-section">
+  <div class="qde-pulse" id="qdePulse"></div>
+  <div class="qde-tabs"><div class="qde-tab active" data-step="1" onclick="qdeShow(1,600)"><span class="qde-letter">Q</span></div><div class="qde-tab" data-step="2" onclick="qdeShow(2,1100)"><span class="qde-letter">D</span></div><div class="qde-tab" data-step="3" onclick="qdeShow(3,1700)"><span class="qde-letter">E</span></div><div class="qde-tab" data-step="4" onclick="qdeShow(4,2600)"><span class="qde-letter">+</span></div></div>
+  <div class="pae-panel qde-panel">
+    <div class="qde-desc shown" id="qdeDesc1" style="transition-duration:600ms">
+      <p class="qde-name"><b>Questionner intelligemment.</b> <i>Inspire de Quintilien.</i></p>
+      <p class="qde-body">Identifier le vrai probleme, clarifier les enjeux et eviter les decisions superficielles. Une erreur de questionnement engendre une chaine d erreurs invisibles.</p>
+    </div><div class="qde-desc" id="qdeDesc2" style="transition-duration:1100ms">
+      <p class="qde-name"><b>Decider avec lucidite.</b> <i>Avec W. Edwards Deming.</i></p>
+      <p class="qde-body">Choisir en s appuyant sur une analyse rigoureuse. Penser ne suffit pas, il faut structurer, tester, corriger, avec rigueur des processus et humilite de l amelioration continue.</p>
+    </div><div class="qde-desc" id="qdeDesc3" style="transition-duration:1700ms">
+      <p class="qde-name"><b>Executer avec priorite et discipline.</b> <i>Inspire du General Eisenhower.</i></p>
+      <p class="qde-body">Agir sur l important et urgent, planifier l important non urgent, deleguer le secondaire, eliminer l inutile.</p>
+    </div><div class="qde-desc" id="qdeDesc4" style="transition-duration:2600ms">
+      <p class="qde-name"><b>Le filtre de maitrise et d essentiel.</b> <i>Herite de Marc Aurele, Epictete et Epicure.</i></p>
+      <p class="qde-body">Une decision n a de valeur que si elle est a la fois necessaire et sous notre controle. Ici, le rythme s arrete. Respirez.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .qde-desc{ display:none; opacity:0; transition-property:opacity; }
+  .qde-desc.shown{ display:block; opacity:1; }
+</style>
+
+<script>
+  function qdeShow(n, speed){
+    document.querySelectorAll('.qde-desc').forEach(function(p){ p.classList.remove('shown'); p.style.display='none'; });
+    document.querySelectorAll('.qde-tab').forEach(function(t){ t.classList.remove('active'); });
+    document.querySelector('.qde-tab[data-step="'+n+'"]').classList.add('active');
+    var el = document.getElementById('qdeDesc'+n);
+    el.style.display = 'block';
+    void el.offsetWidth;
+    el.classList.add('shown');
+    var pulse = document.getElementById('qdePulse');
+    pulse.style.animationDuration = speed + 'ms';
+  }
+</script>
+
+<div class="cd-consult">
+  <div class="cd-consult-inner">
+    <div>
+      <span class="section-eyebrow">Aller plus loin</span>
+      <h3>Ce concept s applique a votre organisation</h3>
+      <p>Conseil en management et en gestion, forge par une experience de direction dans un secteur exigeant.</p>
+    </div>
+    <a href="about.html#conseil" class="btn-primary-dark">
+      Discuter de votre situation
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="14" height="14"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</div>
+
+<div class="cd-cta">
+  <a href="reflexions.html" class="btn-outline">Lire les reflexions liees
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="14" height="14"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+  </a>
+  <a href="capir.html" class="btn-outline">Concept suivant, CAPIR
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="14" height="14"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+  </a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="mono">NGAconcept</span>
+        <p>Dr Gambetta A. Nacro. Statisticien, économiste, concepteur de cadres de pensée.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <span class="footer-col-title">Explorer</span>
+          <a href="concepts.html">Concepts</a>
+          <a href="reflexions.html">Réflexions</a>
+          <a href="formations.html">Formations</a>
+          <a href="conferences.html">Conférences</a>
+          <a href="livres.html">Livres</a>
+          <a href="about.html">À propos</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-title">Contact</span>
+          <a href="mailto:gambettaaboubakarnacro@gmail.com">Écrire un message</a>
+          <a href="https://www.linkedin.com/in/dr-gambetta-a-nacro-ba7b3470" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Ouagadougou, Burkina Faso</span>
+      <span>NGAconcept, tous droits réservés</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hubBtn = document.getElementById('hubBtn');
+  const hubClose = document.getElementById('hubClose');
+  const hubPanel = document.getElementById('hubPanel');
+  const hubOverlay = document.getElementById('hubOverlay');
+  function openHub(){ hubPanel.classList.add('open'); hubOverlay.classList.add('open'); }
+  function closeHub(){ hubPanel.classList.remove('open'); hubOverlay.classList.remove('open'); }
+  hubBtn.addEventListener('click', openHub);
+  hubClose.addEventListener('click', closeHub);
+  hubOverlay.addEventListener('click', closeHub);
+</script>
+
+</body>
+</html>

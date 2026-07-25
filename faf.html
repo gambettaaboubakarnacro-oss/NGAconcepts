@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAF, NGAconcept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="" id="top">
+  <div class="header-inner">
+    <a href="index.html" class="brand">
+      <img src="assets/logo.png" alt="NGAconcept">
+      <span class="brand-word">NGA<span>concept</span></span>
+    </a>
+    <button class="hub-btn" id="hubBtn">
+      Menu
+      <span class="dots"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+    </button>
+  </div>
+</header>
+
+<div class="hub-overlay" id="hubOverlay"></div>
+<nav class="hub-panel" id="hubPanel">
+  <div class="hub-top">
+    <span class="hub-label">Navigation</span>
+    <button class="hub-close" id="hubClose" aria-label="Fermer">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <div class="hub-title">Le <b>hub</b> des intelligences NGAconcept</div>
+  <div class="hub-grid">
+      <a href="concepts.html" class="hub-module current">
+        <span class="hm-num">01</span>
+        <span class="hm-body">
+          <span class="hm-name">Concepts</span>
+          <span class="hm-desc">Des cadres de pensée et plus, du réflexe d urgence a la vision de long terme.</span>
+        </span>
+        <span class="hm-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a href="reflexions.html" class="hub-module">
+        <span class="hm-num">02</span>
+        <span class="hm-body">
+          <span class="hm-name">Réflexions</span>
+          <span class="hm-desc">Essais, citations et notes publiés régulièrement.</span>
+        </span>
+        <span class="hm-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a href="formations.html" class="hub-module">
+        <span class="hm-num">03</span>
+        <span class="hm-body">
+          <span class="hm-name">Formations</span>
+          <span class="hm-desc">Sessions et programmes construits autour des concepts.</span>
+        </span>
+        <span class="hm-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a href="conferences.html" class="hub-module">
+        <span class="hm-num">04</span>
+        <span class="hm-body">
+          <span class="hm-name">Conférences</span>
+          <span class="hm-desc">Interventions publiques et invitations.</span>
+        </span>
+        <span class="hm-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a href="livres.html" class="hub-module">
+        <span class="hm-num">05</span>
+        <span class="hm-body">
+          <span class="hm-name">Livres</span>
+          <span class="hm-desc">Ouvrages publiés et à paraître.</span>
+        </span>
+        <span class="hm-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+      <a href="about.html" class="hub-module">
+        <span class="hm-num">06</span>
+        <span class="hm-body">
+          <span class="hm-name">À propos</span>
+          <span class="hm-desc">Parcours et vision du Dr Gambetta A. Nacro.</span>
+        </span>
+        <span class="hm-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </a>
+  </div>
+  <div class="hub-foot">
+    <a href="index.html">Accueil</a>
+    <a href="https://www.linkedin.com/in/dr-gambetta-a-nacro-ba7b3470" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</nav>
+
+
+<div class="concept-detail-hero" style="--accent:#C0392B">
+  <div class="inner cd-hero-flex">
+    <div class="cd-hero-text">
+      <a href="concepts.html" class="cd-back">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+        Tous les concepts
+      </a>
+      <div class="cd-acronym" style="color:#C0392B">FAF</div>
+      <p class="cd-tagline"><b>Fuir Avant le Feu</b><br>Quand les conditions du desastre sont reunies, il ne manque qu un declencheur.</p>
+    </div>
+  </div>
+</div>
+
+<div class="faf-triangle-section">
+  <p class="faf-instruct">Touchez les trois sommets, un a un.</p>
+  <div class="faf-stage">
+    <svg viewBox="0 0 300 260" width="280" height="240" id="fafSvg">
+      <polygon id="fafPoly" points="150,20 270,230 30,230" fill="none" stroke="#8A7A5A" stroke-width="3"/>
+      <g class="faf-node" data-node="1" onclick="fafTouch(1)">
+        <circle cx="150" cy="20" r="16" fill="#EFE4C8" stroke="#8A7A5A" stroke-width="2.5"/>
+        <text x="150" y="-6" text-anchor="middle" font-family="Cinzel" font-size="13" fill="#5C4A32">CHALEUR</text>
+      </g>
+      <g class="faf-node" data-node="2" onclick="fafTouch(2)">
+        <circle cx="270" cy="230" r="16" fill="#EFE4C8" stroke="#8A7A5A" stroke-width="2.5"/>
+        <text x="272" y="252" text-anchor="start" font-family="Cinzel" font-size="13" fill="#5C4A32">COMBURANT</text>
+      </g>
+      <g class="faf-node" data-node="3" onclick="fafTouch(3)">
+        <circle cx="30" cy="230" r="16" fill="#EFE4C8" stroke="#8A7A5A" stroke-width="2.5"/>
+        <text x="28" y="252" text-anchor="end" font-family="Cinzel" font-size="13" fill="#5C4A32">COMBUSTIBLE</text>
+      </g>
+    </svg>
+  </div>
+  <div class="faf-reveal" id="fafReveal">
+    <p class="faf-reveal-text">Les trois conditions sont reunies. Il ne manque plus qu un declencheur.</p>
+    <p class="faf-reveal-sub">Si tu restes malgre tout, anticipe et assume les consequences. C est le principe FAF applique a tout systeme: physique, humain, ou organisationnel.</p>
+  </div>
+</div>
+
+<script>
+  var fafState = {1:false, 2:false, 3:false};
+  function fafTouch(n){
+    fafState[n] = true;
+    var node = document.querySelector('.faf-node[data-node="'+n+'"] circle');
+    node.setAttribute('fill', '#C0392B');
+    node.setAttribute('stroke', '#7A2418');
+    document.querySelector('.faf-node[data-node="'+n+'"]').classList.add('lit');
+    if(fafState[1] && fafState[2] && fafState[3]){
+      document.getElementById('fafPoly').setAttribute('stroke', '#C0392B');
+      document.getElementById('fafPoly').setAttribute('fill', 'rgba(192,57,43,0.12)');
+      document.getElementById('fafSvg').classList.add('ember');
+      document.getElementById('fafReveal').classList.add('shown');
+    }
+  }
+</script>
+
+<div class="pillars" style="padding-top:0">
+  <div class="domain-card">
+      <div class="domain-head" onclick="this.parentElement.classList.toggle('open')">
+        <span class="domain-name">Sante</span>
+        <span class="domain-sub">Terrain fragilise, Fatigue chronique, immunite basse, sommeil degrade</span>
+        <svg class="pillar-chev" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="domain-body">
+        <div class="domain-grid">
+          <div class="dcell"><span class="dtag">Combustible</span><p>Facteurs de risque accumules: mauvaise alimentation, sedentarite, stress non traite.</p></div>
+          <div class="dcell chaleur"><span class="dtag">Chaleur</span><p>Un choc ponctuel: infection, effort brutal, contrariete majeure.</p></div>
+          <div class="dcell fuite"><span class="dtag">Fuite</span><p>Consulter, se reposer, corriger le mode de vie avant l apparition du choc declencheur.</p></div>
+        </div>
+      </div>
+    </div><div class="domain-card">
+      <div class="domain-head" onclick="this.parentElement.classList.toggle('open')">
+        <span class="domain-name">Couple et famille</span>
+        <span class="domain-sub">Non dits accumules, Frustrations qui s installent dans la duree</span>
+        <svg class="pillar-chev" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="domain-body">
+        <div class="domain-grid">
+          <div class="dcell"><span class="dtag">Combustible</span><p>Fatigue relationnelle, manque de reconnaissance, incomprehensions repetees.</p></div>
+          <div class="dcell chaleur"><span class="dtag">Chaleur</span><p>Un mot de trop, une remarque mal recue, un incident mineur.</p></div>
+          <div class="dcell fuite"><span class="dtag">Fuite</span><p>Ouvrir le dialogue, desamorcer les tensions, prendre du recul avant l esclandre.</p></div>
+        </div>
+      </div>
+    </div><div class="domain-card">
+      <div class="domain-head" onclick="this.parentElement.classList.toggle('open')">
+        <span class="domain-name">Organisation</span>
+        <span class="domain-sub">Tresorerie tendue, Dependance a peu de clients ou de revenus</span>
+        <svg class="pillar-chev" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="domain-body">
+        <div class="domain-grid">
+          <div class="dcell"><span class="dtag">Combustible</span><p>Equipe demotivee, process fragiles, promesses non tenues.</p></div>
+          <div class="dcell chaleur"><span class="dtag">Chaleur</span><p>Un incident client, un depart cle, un retard de paiement.</p></div>
+          <div class="dcell fuite"><span class="dtag">Fuite</span><p>Diversifier les revenus, stabiliser l equipe, corriger les process avant la crise.</p></div>
+        </div>
+      </div>
+    </div><div class="domain-card">
+      <div class="domain-head" onclick="this.parentElement.classList.toggle('open')">
+        <span class="domain-name">Societe et politique</span>
+        <span class="domain-sub">Inegalites persistantes, Defiance envers les institutions</span>
+        <svg class="pillar-chev" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="domain-body">
+        <div class="domain-grid">
+          <div class="dcell"><span class="dtag">Combustible</span><p>Frustrations accumulees, sentiment d injustice non adresse.</p></div>
+          <div class="dcell chaleur"><span class="dtag">Chaleur</span><p>Un fait divers, une decision percue comme injuste.</p></div>
+          <div class="dcell fuite"><span class="dtag">Fuite</span><p>Reformer et retablir la confiance avant que l etincelle ne survienne.</p></div>
+        </div>
+      </div>
+    </div><div class="domain-card">
+      <div class="domain-head" onclick="this.parentElement.classList.toggle('open')">
+        <span class="domain-name">Finances personnelles</span>
+        <span class="domain-sub">Dettes existantes, Charges fixes elevees</span>
+        <svg class="pillar-chev" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="domain-body">
+        <div class="domain-grid">
+          <div class="dcell"><span class="dtag">Combustible</span><p>Absence d epargne de precaution, depenses non maitrisees.</p></div>
+          <div class="dcell chaleur"><span class="dtag">Chaleur</span><p>Une depense imprevue: sante, reparation, perte de revenu.</p></div>
+          <div class="dcell fuite"><span class="dtag">Fuite</span><p>Constituer une epargne tampon et assainir le budget avant l imprevu.</p></div>
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="cd-consult">
+  <div class="cd-consult-inner">
+    <div>
+      <span class="section-eyebrow">Aller plus loin</span>
+      <h3>Ce concept s applique a votre organisation</h3>
+      <p>Conseil en management et en gestion, forge par une experience de direction dans un secteur exigeant.</p>
+    </div>
+    <a href="about.html#conseil" class="btn-primary-dark">
+      Discuter de votre situation
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="14" height="14"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</div>
+
+<div class="cd-cta">
+  <a href="reflexions.html" class="btn-outline">Lire les reflexions liees
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="14" height="14"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+  </a>
+  <a href="pae.html" class="btn-outline">Concept suivant, PAE
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" width="14" height="14"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+  </a>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="mono">NGAconcept</span>
+        <p>Dr Gambetta A. Nacro. Statisticien, économiste, concepteur de cadres de pensée.</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <span class="footer-col-title">Explorer</span>
+          <a href="concepts.html">Concepts</a>
+          <a href="reflexions.html">Réflexions</a>
+          <a href="formations.html">Formations</a>
+          <a href="conferences.html">Conférences</a>
+          <a href="livres.html">Livres</a>
+          <a href="about.html">À propos</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-title">Contact</span>
+          <a href="mailto:gambettaaboubakarnacro@gmail.com">Écrire un message</a>
+          <a href="https://www.linkedin.com/in/dr-gambetta-a-nacro-ba7b3470" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>Ouagadougou, Burkina Faso</span>
+      <span>NGAconcept, tous droits réservés</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const hubBtn = document.getElementById('hubBtn');
+  const hubClose = document.getElementById('hubClose');
+  const hubPanel = document.getElementById('hubPanel');
+  const hubOverlay = document.getElementById('hubOverlay');
+  function openHub(){ hubPanel.classList.add('open'); hubOverlay.classList.add('open'); }
+  function closeHub(){ hubPanel.classList.remove('open'); hubOverlay.classList.remove('open'); }
+  hubBtn.addEventListener('click', openHub);
+  hubClose.addEventListener('click', closeHub);
+  hubOverlay.addEventListener('click', closeHub);
+</script>
+
+</body>
+</html>
