@@ -846,6 +846,22 @@ section.block{ max-width:1280px; margin:0 auto; padding:60px 20px; }
   to{ opacity:1; transform:translateY(0); }
 }
 
+/* ============ BOOK ============ */
+.book-layout{
+  display:flex; flex-direction:column; gap:32px;
+  align-items:center;
+}
+.book-cover{
+  max-width:280px;
+  box-shadow:0 20px 46px rgba(20,13,6,0.35);
+  border-radius:2px;
+  overflow:hidden;
+  flex-shrink:0;
+}
+.book-info{ max-width:480px; }
+.book-title{ font-family:'Cinzel', serif; font-size:28px; font-weight:700; color:var(--ink); margin:6px 0 12px; }
+.book-sub{ font-size:15.5px; color:var(--wine); font-style:italic; line-height:1.6; margin-bottom:16px; }
+
 .pillars{
   max-width:1280px; margin:0 auto; padding:52px 20px 80px;
   display:flex; flex-direction:column; gap:14px;
@@ -999,6 +1015,8 @@ footer{ border-top:4px double var(--bronze); padding:44px 20px 30px; background:
   .newsletter-inner{ flex-direction:row; align-items:center; justify-content:space-between; padding:30px 32px; }
   .newsletter-form{ flex-direction:row; }
   .newsletter-input{ width:260px; }
+
+  .book-layout{ flex-direction:row; align-items:flex-start; gap:56px; }
 
   .page-hero{ padding:90px 40px 30px; }
 
