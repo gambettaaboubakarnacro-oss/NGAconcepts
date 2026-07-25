@@ -4,6 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Réflexions, NGAconcept</title>
+<meta name="description" content="Essais, citations et notes du Dr Gambetta A. Nacro sur le leadership, l introspection et la decision, publies regulierement.">
+<link rel="canonical" href="https://ngaconcepts.pages.dev/reflexions.html">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Réflexions, NGAconcept">
+<meta property="og:description" content="Essais, citations et notes du Dr Gambetta A. Nacro sur le leadership, l introspection et la decision, publies regulierement.">
+<meta property="og:url" content="https://ngaconcepts.pages.dev/reflexions.html">
+<meta property="og:image" content="https://ngaconcepts.pages.dev/assets/logo.png">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Réflexions, NGAconcept">
+<meta name="twitter:description" content="Essais, citations et notes du Dr Gambetta A. Nacro sur le leadership, l introspection et la decision, publies regulierement.">
+<meta name="twitter:image" content="https://ngaconcepts.pages.dev/assets/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -107,6 +120,18 @@
   <p class="newsletter-msg" id="newsletterMsg"></p>
 </div>
 
+<div class="seal-overlay" id="sealOverlay">
+  <div class="seal-stamp" id="sealStamp">
+    <svg viewBox="0 0 120 120" width="110" height="110">
+      <circle cx="60" cy="60" r="54" fill="#6E1E1E" stroke="#E8C77A" stroke-width="3"/>
+      <circle cx="60" cy="60" r="44" fill="none" stroke="#E8C77A" stroke-width="1.2" stroke-dasharray="2 4"/>
+      <text x="60" y="52" text-anchor="middle" font-family="Cinzel" font-weight="700" font-size="20" fill="#E8C77A">NGA</text>
+      <text x="60" y="72" text-anchor="middle" font-family="Cinzel" font-size="9" fill="#E8C77A" letter-spacing="1">CONCEPT</text>
+    </svg>
+  </div>
+  <p class="seal-text" id="sealText">Votre inscription est scellee</p>
+</div>
+
 <script>
   document.getElementById('newsletterForm').addEventListener('submit', function(e){
     e.preventDefault();
@@ -127,9 +152,8 @@
     .then(function(r){ return r.json(); })
     .then(function(data){
       if(data.ok){
-        msg.textContent = 'Merci, vous recevrez les prochaines reflexions.';
-        msg.className = 'newsletter-msg success';
         emailInput.value = '';
+        showSeal();
       } else {
         msg.textContent = 'Une erreur est survenue. Reessayez plus tard.';
         msg.className = 'newsletter-msg error';
@@ -143,6 +167,19 @@
       btn.disabled = false;
       btn.textContent = 'Recevoir les reflexions';
     });
+  });
+
+  function showSeal(){
+    var overlay = document.getElementById('sealOverlay');
+    var stamp = document.getElementById('sealStamp');
+    overlay.classList.add('open');
+    stamp.classList.remove('drop');
+    void stamp.offsetWidth;
+    stamp.classList.add('drop');
+    setTimeout(function(){ overlay.classList.remove('open'); }, 3200);
+  }
+  document.getElementById('sealOverlay').addEventListener('click', function(){
+    this.classList.remove('open');
   });
 </script>
 

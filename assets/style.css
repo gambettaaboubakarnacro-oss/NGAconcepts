@@ -803,6 +803,49 @@ section.block{ max-width:1280px; margin:0 auto; padding:60px 20px; }
 .newsletter-msg.success{ color:#3F6B4A; }
 .newsletter-msg.error{ color:var(--wine); }
 
+/* ============ 404 ============ */
+.notfound-hero{ text-align:center; padding-bottom:60px; }
+.notfound-hero h1{ margin:0 auto; }
+.notfound-hero p{ margin-left:auto; margin-right:auto; }
+.notfound-hero .hero-cta{ justify-content:center; }
+
+/* ============ SEAL CONFIRMATION ============ */
+.seal-overlay{
+  position:fixed; inset:0; z-index:120;
+  background:rgba(10,7,3,0.72);
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:22px;
+  opacity:0; pointer-events:none;
+  transition:opacity .3s ease;
+}
+.seal-overlay.open{ opacity:1; pointer-events:auto; }
+.seal-stamp{
+  transform:translateY(-140px) scale(1.5) rotate(-8deg);
+  opacity:0;
+  filter:drop-shadow(0 10px 24px rgba(0,0,0,0.5));
+}
+.seal-stamp.drop{
+  animation:sealDrop .7s cubic-bezier(.34,1.56,.64,1) forwards;
+}
+@keyframes sealDrop{
+  0%{ transform:translateY(-140px) scale(1.5) rotate(-8deg); opacity:0; }
+  60%{ transform:translateY(0) scale(1.08) rotate(2deg); opacity:1; }
+  75%{ transform:translateY(0) scale(0.94) rotate(0deg); }
+  100%{ transform:translateY(0) scale(1) rotate(0deg); opacity:1; }
+}
+.seal-text{
+  font-family:'Cinzel', serif;
+  font-size:16px;
+  color:#EAD9B8;
+  letter-spacing:0.5px;
+  opacity:0;
+  animation:sealTextIn .6s ease .55s forwards;
+}
+@keyframes sealTextIn{
+  from{ opacity:0; transform:translateY(6px); }
+  to{ opacity:1; transform:translateY(0); }
+}
+
 .pillars{
   max-width:1280px; margin:0 auto; padding:52px 20px 80px;
   display:flex; flex-direction:column; gap:14px;

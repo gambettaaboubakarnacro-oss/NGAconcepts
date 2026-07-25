@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ngaconcepts.pages.dev/sitemap.xml
